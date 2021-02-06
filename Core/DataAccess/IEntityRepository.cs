@@ -1,10 +1,12 @@
-﻿using Entities.Abstract;
+﻿using Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Text;
 
-namespace DataAccess.Abstract
+//Core katmani diger katmanlari referans almaz. Global katmandir.
+//Eger referans alirsa bagimli olmus olur.
+namespace Core.DataAccess
 {
     //generic constraint - generic kisit
 
