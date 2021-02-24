@@ -11,7 +11,7 @@ namespace Core.Utilities.Results
 
         }
 
-        public ErrorResult(bool success) : base(false) //mesaj vermek istemiyor
+        public ErrorResult() : base(false) //mesaj vermek istemiyor
         {
 
         }
