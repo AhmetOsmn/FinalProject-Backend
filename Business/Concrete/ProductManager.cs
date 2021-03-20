@@ -31,10 +31,9 @@ namespace Business.Concrete
             _categoryService = categoryService;
         }
 
-        [SecuredOperation("product.add, admin")]  //add kullanacak olanin product.add veya admin claimine, yetkisine sahip olmasini bekliyoruz.
+        //[SecuredOperation("product.add, admin")]  //add kullanacak olanin product.add veya admin claimine, yetkisine sahip olmasini bekliyoruz.
         [ValidationAspect(typeof(ProductValidator))]
         [CacheRemoveAspect("IProductService.Get")]
-
         public IResult Add(Product product)
         {
             //Ayni isimde urun eklenemez
